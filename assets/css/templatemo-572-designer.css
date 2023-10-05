@@ -985,7 +985,7 @@ footer .sub-footer a.scroll-to-top:hover {
 .services .service-item {
   padding: 30px;
   text-align: center;
-  background-color: #ffffff;
+  background-color: var(--svetloSiva);
   -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
   border-radius: 7.5px;
@@ -1006,7 +1006,7 @@ footer .sub-footer a.scroll-to-top:hover {
   margin-top: 15px;
   font-size: 20px;
   font-weight: 700;
-  color: #2a2a2a;
+  color: var(--zuta);
 }
 
 section.interior-design .left-image {
