@@ -123,7 +123,7 @@ ul li {
 p {
   font-size: 15px;
   line-height: 28px;
-  color: #7a7a7a;
+  color: white;
 }
 
 button.main-button {
@@ -1040,11 +1040,11 @@ section.interior-design .right-content h4 {
   margin-bottom: 0px;
   font-size: 20px;
   font-weight: 700;
-  color: #2a2a2a;
+  color: var(--zuta);
 }
 
 section.interior-design .right-content .accordion-button {
-  padding: 30px 0px;
+ 
   border-bottom: 1px solid #eeeeee;
   border-left: none;
   border-right: none;
@@ -1053,14 +1053,14 @@ section.interior-design .right-content .accordion-button {
   outline: none;
   text-align: left;
   font-size: 17px;
-  background-color: transparent;
-  color: #2a2a2a;
+  background-color: var(--svetloSiva);
+  color: white;
 }
 
 section.interior-design .right-content .accordion-button:not(.collapsed) {
-  color: #2a2a2a;
+  color: var(--zuta);
   border-bottom: none;
-  background-color: transparent;
+  
 }
 
 section.interior-design .right-content .accordion-button:focus {
@@ -1083,11 +1083,13 @@ section.interior-design .right-content .accordion-collapse {
 }
 
 section.interior-design .right-content .accordion-body {
-  padding: 0px 0px 30px 0px;
+  background-color: var(--svetloSiva);
+  padding: 0px 0px 0px 0px;
   border-bottom: 1px solid #eeeeee;
   border-left: none;
   border-right: none;
   border-top: none;
+  padding-left: 15px;
 }
 
 .what-they-say .testimonials {
