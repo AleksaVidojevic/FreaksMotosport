@@ -28,23 +28,31 @@ https://templatemo.com/tm-572-designer
   background-color: var(--zuta);
 }
 
-.video{
-  display: inline-block;
-  margin-bottom: 10px;
-  height: auto;
-  width: auto;
-  position: relative;
-  overflow: hidden;
-  max-height:300px;
+/* Stil za video unutar carusela */
+.carousel-item video {
+  width: 100%; /* Postavite širinu videa na 100% */
+  height: 100%; /* Postavite visinu videa na 100% */
+  object-fit: cover; /* Postavite odnos širine i visine */
 }
+
+/* Stil za carusel */
+.carousel {
+  width: 100%; /* Postavite širinu carusela */
+  height: 100%; /* Postavite visinu carusela */
+}
+
+/* Stil za carousel-inner */
+.carousel-inner {
+  width: 100%; /* Postavite širinu unutrašnjeg dela carusela */
+  height: 100%; /* Postavite visinu unutrašnjeg dela carusela */
+}
+
+
 
 .karosel{
   padding-bottom: 100px;
 }
 
-.carousel-item{
-  max-height: 400px;
-}
 
 .tekst{
   color: white;
@@ -485,6 +493,7 @@ button:focus:not(:focus-visible) {
 .search-form #search-form button.main-button {
   width: 100%;
 }
+
 
 section.explore-work .left-image img {
   border-radius: 7.5px;
@@ -1475,7 +1484,7 @@ section.trending-page .trending-item .thumb {
 }
 
 section.trending-page .trending-item .thumb span.banner {
-  background-color: #ff565b;
+  background-color: var(--plava);
   color: #ffffff;
   font-size: 14px;
   padding: 10px 16px;
@@ -1487,6 +1496,15 @@ section.trending-page .trending-item .thumb span.banner {
   top: 0;
   z-index: 2;
 }
+
+@media (max-width: 767px) {
+  section.trending-page .trending-item .thumb span.banner {
+    font-size: 4px; /* Prilagodite veličinu fonta prema potrebi */
+    padding: 3px 4px; /* Prilagodite padding prema potrebi */
+  }
+}
+
+
 
 section.trending-page .trending-item .thumb .hover-effect {
   position: absolute;
@@ -1520,6 +1538,7 @@ section.trending-page .trending-item .thumb .hover-effect .inner-content a.icon 
   position: absolute;
 }
 
+
 section.trending-page .trending-item .thumb img {
   border-radius: 7.5px;
   -webkit-transition: all 1s;
@@ -1527,14 +1546,18 @@ section.trending-page .trending-item .thumb img {
   z-index: 1;
 }
 
+/*
 section.trending-page .trending-item .thumb:hover img {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
+*/
 
+/*
 section.trending-page .trending-item .thumb:hover .hover-effect {
   bottom: 0;
 }
+*/
 
 section.contact-page-map #map iframe {
   border-radius: 7.5px;
@@ -1659,16 +1682,56 @@ section.contact-us-page .right-info ul li span {
 /*# sourceMappingURL=style.css.map */
 
 
+/* Stil za div element sa klasom "service-item" */
+.service-item {
+  transition: transform 0.3s; /* Glatka tranzicija za transformaciju */
+}
+
+/* Dodavanje efekta zumiranja na hover */
+.service-item:hover 
+{
+  cursor: pointer;
+  transform: scale(1.1); /* Zumiranje 10% */
+}
+
+/* Text flip */
+
+.grid-item {
+  position: relative;
+  perspective: 1000px; /* Daje iluziju dubine */
+}
+
+.background-on-click {
+  background-color: var(--svetloSiva);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 24px;
+  padding: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  color: white; /* Boja teksta */
+  transition: transform 0.5s;
+  transform: rotateY(0deg);
+}
+
+.grid-item.flipped .background-on-click {
+  transform: rotateY(180deg);
+}
+
+/* Stil za uvećanje slike */
+.zoomed {
+  transform: scale(1.2); /* Promenite faktor uvećanja prema potrebi */
+  transition: transform 0.3s ease;
+}
 
 
-  /* Stil za div element sa klasom "service-item" */
-  .service-item {
-    transition: transform 0.3s; /* Glatka tranzicija za transformaciju */
-  }
 
-  /* Dodavanje efekta zumiranja na hover */
-  .service-item:hover {
-    cursor: pointer;
-    transform: scale(1.1); /* Zumiranje 10% */
-  }
+
+
 
