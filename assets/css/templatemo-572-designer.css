@@ -410,15 +410,16 @@ button:focus:not(:focus-visible) {
 }
 
 .main-banner {
+  
   border-bottom: 1px solid var(--zuta);
   background-color: #333;
-  background-image: url(../images/friksbugati.jpeg);
+  background-image: url(../images/friksmikicabg3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   padding: 170px 0px 270px 0px;
   text-align: center;
-  box-shadow: 0px 20px 50px black; 
+  box-shadow: 0px 20px 50px black;
 }
 
 @media (min-width: 576px) {
@@ -948,14 +949,17 @@ footer .sub-footer a.scroll-to-top:hover {
 }
 
 .page-banner {
+  border-bottom: 1px solid var(--zuta);
   background-color: #333;
-  background-image: url(../images/page-banner-bg.jpg);
+  background-image: url(../images/friksmikicabg3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  padding: 100px 0px 90px 0px;
+  padding: 170px 0px 270px 0px;
   text-align: center;
+  box-shadow: 0px 20px 50px black;
 }
+
 
 @media (min-width: 768px) {
   .page-banner {
