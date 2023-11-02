@@ -16,6 +16,8 @@
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
     <!--    NOVOO-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -32,44 +34,46 @@
   </head>
 
 <body style="background-color: var(--tamnoSiva);">
-  <div class="loader" style="text-align: center; ">
-    <img class="centered" src="assets/images/friksGIFKONACNO.gif" style="height:150px; width:auto; z-index:999;" >
-    
-  </div>
+  <div class="loader" style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+    <img src="assets/images/friksGIFKONACNO.gif" style="height:150px; width:auto; z-index:999;" >
+</div>
   
-  <header id="#top">
-    <nav class="main-navigation navbar navbar-expand-lg navbar-light">
-        <div class="container">
-          <a class="navbar-brand" href="index.html"><img src="assets/images/friksnobg.png" alt="" style="width: 180px; height: 90px;"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link active" href="index.html">Početna</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="o_nama.html">O nama</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="partneri.html">Partneri</a>
-                  </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="nasi_radovi.html">Naši radovi</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="delovi.html">Delovi</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="kontakt.html">Kontakt</a>
-                </li>
-              </ul>
-            </div>
-        </div>
-    </nav>
-  </header>
+<header id="#top">
 
+  <nav class="main-navigation navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"><img src="assets/images/friksnobg.png" alt="" style="width: 180px; height: 90px;"></a>
+        <button class="navbar-toggler" type="button" style="margin-right:20px" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">Pocetna</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="o_nama.html">O nama</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="partneri.html">Partneri</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="nasi_radovi.html">Nasi radovi</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="delovi.html">Delovi</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="kontakt.html">Kontakt</a>
+              </li>
+             
+            </ul>
+          </div>
+        </div>
+      </div>
+  </nav>
+  
+</header>
   <div class="main-banner change-name">
       <div class="container">
           <div class="row">
@@ -78,7 +82,7 @@
                     <h6>Freaks motorsport & C2Motorsports</h6>
                     <h2><em>Dyno</em> Remap</h2>
                     <div class="white-button">
-                        <a href="kontakt.html`">Kontakt</a>
+                        <a href="kontakt.html">Kontakt</a>
                     </div>
               </div>
           </div>
@@ -87,6 +91,71 @@
 
   
 </div>
+
+<section class="explore-work" id="explore">
+  <div class="container expanded">
+      <div class="row">
+          <div class="col-lg-6">
+              <div class="section-heading">
+                   <h2>Pogledajte sta se desava u<br><em>nasoj garazi</em>.</h2>
+               </div>
+               <div class="left-content">
+                   <p>Dugogodišnjim iskustvom i strastvenim pristupom automobilskoj industriji, 
+                    Freaks Motorsport postavlja standarde u oblasti chiptuninga, dyno testiranja i
+                     servisiranja vozila. Fokusirani smo na vozila većinskih proizvođača VAG grupacije, a
+                      naša sposobnost ugradnje delova od renomiranih brendova čini nas vašim pouzdanim 
+                      partnerom za optimizaciju performansi i održavanje vašeg automobila. Nastojimo da 
+                      pružimo vrhunsku uslugu kroz našu stručnost i posvećenost, obezbeđujući da vaše vozilo 
+                      postigne najbolje performanse uz najviši nivo pouzdanosti i održivosti."</p>
+                   <div class="primary-button">
+                       <a href="o_nama.html">Detaljnije</a>
+                   </div>
+                   <br>
+             </div>
+         </div>
+         <div class="col-lg-6 karosel">
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+              </ol>
+              <div class="carousel-inner">
+                  <div class="carousel-item active">
+                      <video class="d-block w-100" controls>
+                          <source src="assets/images/pocetnavideo1.mp4" type="video/mp4">
+                      </video>
+                  </div>
+                  <div class="carousel-item">
+                      <video class="d-block w-100" controls>
+                          <source src="assets/images/pocetnavideo2.mp4" type="video/mp4">
+                      </video>
+                  </div>
+                  <div class="carousel-item">
+                      <video class="d-block w-100" controls>
+                          <source src="assets/images/pocetnavideo3.mp4" type="video/mp4">
+                      </video>
+                  </div>
+                  <div class="carousel-item">
+                    <video class="d-block w-100" controls>
+                        <source src="assets/images/multimaps.mp4" type="video/mp4">
+                    </video>
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+              </a>
+          </div>
+      </div>
+      
+</section>
+
   <section class="explore-work" id="explore">
       <div class="container expanded">
           <div class="row">
@@ -99,9 +168,12 @@
                 <div class="right-content" style="text-align: left;">
                     <ul class="stages">
                         <li>
-                          <h4>Hvala što ste posetili našu stranicu!</h4>
+                    
                           <p class="tekst">
-                              Ovde možete dobiti prvi pogled na neke od naših uspešno odradjenih projekata u oblasti chip tuning-a. Za detaljniji uvid u naše usluge i da vidite još više slika odradjenih automobila, posetite našu stranicu sa galerijom. Tamo možete pronaći široku kolekciju slika sa detaljnim opisima projekata. Kliknite na 'Pogledajte galeriju' i uživajte u estetici i performansama koje smo postigli.
+                            Dobrodošli u našu garažu, mesto gde strast i stručnost u svetu automobila susreću vrhunske performanse. 
+                            Upoznajte neke od naših impresivnih projekata, uključujući prilagođavanje vozila za renomirane trkače 
+                            poput Milovana Mikice Vesnića i transformaciju fabričkog vozila poput Golfa 7 R u prvi pravi street race 
+                            automobil od pocetka do kraja u Srbiji. Pogledajte kako naš tim pretvara vozila u moćne mašine koje ostavljaju traga na trkačkoj stazi.
                           </p>
                         </li>
                     </ul>
@@ -118,52 +190,7 @@
       </div>
   </section>
 
-  <section class="explore-work" id="explore">
-    <div class="container expanded">
-        <div class="row">
-            <div class="col-lg-6">
-                <div class="section-heading">
-                     <h2>Pogledajte sta se desava u<br><em>nasoj garazi</em>.</h2>
-                 </div>
-                 <div class="left-content">
-                     <p>Naša web stranica nudi širok spektar usluga i modifikacija za vaš automobil, omogućavajući vam da poboljšate njegove performanse i prilagodite ih svojim željama. Naš tim stručnjaka specijalizovan je za rad s različitim markama i modelima automobila, i pružamo visokokvalitetnu podršku za tuning i modifikacije.</p>
-                     <div class="primary-button">
-                         <a href="o_nama.html">Detaljnije</a>
-                     </div>
-                     <br>
-               </div>
-           </div>
-            <div class="col-lg-6 karosel">
-                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img class="d-block w-100"  src="assets/images/audis3.jpeg"  alt="First slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" src="assets/images/golf6r.jpeg" alt="Second slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" src="assets/images/seatleon.jpeg"  alt="Third slide">
-                        </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-</section>
-
+  
 <footer>
       <div class="container">
           <div class="row">

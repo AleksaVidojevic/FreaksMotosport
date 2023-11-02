@@ -1,10 +1,4 @@
-/*
 
-TemplateMo 572 Designer
-
-https://templatemo.com/tm-572-designer
-
-*/
 
 .dugme
 {
@@ -446,6 +440,19 @@ button:focus:not(:focus-visible) {
 }
 
 .main-banner h2 em {
+  font-style: normal;
+  color: var(--zuta);
+}
+.main-banner h3 {
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+
+.main-banner h3 em {
   font-style: normal;
   color: var(--zuta);
 }
@@ -1737,5 +1744,9 @@ section.contact-us-page .right-info ul li span {
 
 
 
+.partneriPolja{
+  margin-bottom:50px;
+  margin-top:70px;
+}
 
 
